@@ -36,7 +36,7 @@ public class TransactionTransferScheduler {
      * Метод по расписанию получает транзакции из БД
      * @throws Exception
      */
-    @Scheduled(fixedDelay = 5000)
+    @Scheduled(fixedDelay = 30000)
     public void getTransactions(){
         try{
             List<Transaction> transactions = transactionRepository.findFirst100ByOrderById();
